@@ -2,11 +2,12 @@
 
 from __future__ import annotations
 
-from reflex_survey import styles
-from reflex_survey.components.sidebar import sidebar
 from typing import Callable
 
 import reflex as rx
+
+from reflex_survey import styles
+from reflex_survey.components.sidebar import sidebar
 
 # Meta tags for the app.
 default_meta = [

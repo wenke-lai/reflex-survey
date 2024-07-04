@@ -1,8 +1,8 @@
 """The settings page."""
 
-from reflex_survey.templates import ThemeState, template
-
 import reflex as rx
+
+from reflex_survey.templates import ThemeState, template
 
 
 @template(route="/settings", title="Settings")

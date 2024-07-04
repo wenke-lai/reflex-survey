@@ -1,9 +1,9 @@
 """Welcome to Reflex!."""
 
 # Import all the pages.
-from reflex_survey.pages import *
-
 import reflex as rx
+
+from reflex_survey.pages import *  # noqa
 
 
 class State(rx.State):

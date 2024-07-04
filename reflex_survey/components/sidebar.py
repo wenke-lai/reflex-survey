@@ -1,8 +1,8 @@
 """Sidebar component for the app."""
 
-from reflex_survey import styles
-
 import reflex as rx
+
+from reflex_survey import styles
 
 
 def sidebar_header() -> rx.Component:

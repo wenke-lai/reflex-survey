@@ -1,9 +1,9 @@
 """The home page of the app."""
 
+import reflex as rx
+
 from reflex_survey import styles
 from reflex_survey.templates import template
-
-import reflex as rx
 
 
 @template(route="/", title="Home")
