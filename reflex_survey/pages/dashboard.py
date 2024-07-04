@@ -5,6 +5,16 @@ import reflex as rx
 from reflex_survey.templates import template
 
 
+class DashboardState(rx.State):
+    value: int = 0
+
+    def increment(self):
+        self.value += 1
+
+    def decrement(self):
+        self.value -= 1
+
+
 @template(route="/dashboard", title="Dashboard")
 def dashboard() -> rx.Component:
     """The dashboard page.
@@ -19,4 +29,7 @@ def dashboard() -> rx.Component:
             "You can edit this page in ",
             rx.code("{your_app}/pages/dashboard.py"),
         ),
+        rx.button("++", on_click=DashboardState.increment),
+        rx.text(DashboardState.value),
+        rx.button("--", on_click=DashboardState.decrement),
     )
