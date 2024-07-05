@@ -11,4 +11,6 @@ config = rx.Config(
     db_url="sqlite:///reflex.db",
     # redis_url="redis://localhost:6379/0",
     cors_allowed_origins=["*"],
+    # disable telemetry
+    telemetry_enabled=False,
 )
